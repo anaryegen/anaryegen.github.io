@@ -5,6 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper <i>Cross-lingual argument mining in the medical domain</i> is accepted at SEPLN 2024.
-
----
+## Our paper <i>Cross-lingual argument mining in the medical domain</i> is accepted at SEPLN 2024.

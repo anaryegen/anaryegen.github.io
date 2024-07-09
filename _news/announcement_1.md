@@ -5,6 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started the Ph.D
-
----
+## Started the Ph.D
