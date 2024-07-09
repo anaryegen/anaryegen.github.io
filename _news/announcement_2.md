@@ -8,7 +8,8 @@ related_posts: false
 Our paper <i>"Argument Mining in Data Scarce Settings: Cross-lingual Transfer and Few-shot Techniques"</i> is accepted at the ACL 2024 Main Conference
 
 ---
-<!-- 
+
+<!--
 Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
 
 ---
