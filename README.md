@@ -22,7 +22,7 @@
 
 </div>
 
-## User community
+<!-- ## User community
 
 The vibrant community of **al-folio** users is growing!
 Academics around the world use this theme for their homepages, blogs, lab pages, as well as webpages for courses, workshops, conferences, meetups, and more.
@@ -186,7 +186,7 @@ Workshop on Diffusion Models (NeurIPS: <a href="https://diffusionworkshop.github
 Workshop on Structured Probabilistic Inference & Generative Modeling (ICML: <a href="https://spigmworkshop.github.io/" target="_blank">2023</a>, <a href="https://spigmworkshop2024.github.io/" target="_blank">2024</a>)
 </td>
 </tr>
-</table>
+</table> -->
 
 ## Lighthouse PageSpeed Insights
 

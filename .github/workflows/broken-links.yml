@@ -10,7 +10,6 @@ on:
       - "**.html"
       - "**.js"
       - "**.liquid"
-      - "**/*.md"
       - "**.yml"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
