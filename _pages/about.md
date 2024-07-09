@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD Candidate in Natural Language Processing
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  align: left
+  image: profile_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><i class="fa-regular fa-location-dot"></i> Donostia-San Sebastian</p>
+    <p><i class="fa-brands fa-square-x-twitter"></i> <a href="https://x.com/anaryegen">Twitter</a></p>
+    <p><i class="fa-brands fa-google-scholar"></i> <a href="https://scholar.google.com/citations?user=xMzGYD4AAAAJ&hl=en">Google Scholar</a></p>
+    <p><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/anaryegen/"> LinkedIn</a></p>
+    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/anaryegen">GitHub</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a second-year Ph.D candidate at [HiTZ: Basque Center for Language Technology](https://www.hitz.eus/), the University of the Basque Country where I am advised by [Rodrigo Agerri](https://ragerri.github.io). My research is focused on <b><u>Argument Mining (AM)</u></b> in its broadest sense. I am interested in the latest advancements in Natural Language Processing (NLP) and exploring their applications in AM to enhance the argumentative capabilities of current state-of-the-art solutions. All of it with multilinguality in mind. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before starting my Ph.D, I got a B.Sc in <b>Computer Science</b> in 2019 and a M.Sc in <b>Natural Language Processing</b> in 2022. My journey into NLP began with my Bachelor's thesis on <b>Question-answering systems</b> and continued the research on <b>Discourse Parsing</b> and <b>Argument Mining</b> during two years of the Master's degree.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
