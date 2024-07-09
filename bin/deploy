@@ -94,7 +94,6 @@ export JEKYLL_ENV=production
 
 # Build site
 bundle exec jekyll build
-bundle lock --add-platform x86_64-linux
 
 # Purge unused css
 purgecss -c purgecss.config.js
