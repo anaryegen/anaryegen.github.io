@@ -26,14 +26,13 @@ hr {
 table {
   td,
   th {
-    font-size: 1rem;
+    font-size: 15px;
   }
 
   th {
     font-weight: bold;
   }
 }
-
 a,
 table.table a {
   color: var(--global-theme-color);
@@ -184,14 +183,17 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
-
+  // margin-bottom: 20px;
+  margin-top: -5px;
+  border-radius: 10%;
   .more-info {
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 20px;
     font-family: monospace;
 
     p {
       display: inline-block;
+      margin-top: 30px;
       margin: 0;
     }
   }
@@ -218,7 +220,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .post-description {
-  margin-bottom: 2rem;
+  margin-bottom: 15px;
   font-size: 0.875rem;
 
   a {
@@ -651,7 +653,7 @@ footer.sticky-bottom {
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 2rem;
+    font-size: 15px;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;

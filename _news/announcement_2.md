@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper <i>"Argument Mining in Data Scarce Settings: Cross-lingual Transfer and Few-shot Techniques"</i> is accepted at the ACL 2024 Main Conference.
+Paper <i>"Argument Mining in Data Scarce Settings: Cross-lingual Transfer and Few-shot Techniques"</i> is accepted at the <b style="color: #048da5">ACL 2024 Main Conference</b>.
