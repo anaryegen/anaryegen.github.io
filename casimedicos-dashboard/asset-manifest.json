@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/casimedicos-dashboard/static/css/main.ea2d110a.css",
-    "main.js": "/casimedicos-dashboard/static/js/main.e25cb9c2.js",
+    "main.css": "/casimedicos-dashboard/static/css/main.7459bfb1.css",
+    "main.js": "/casimedicos-dashboard/static/js/main.475aedee.js",
     "static/js/453.185a81d7.chunk.js": "/casimedicos-dashboard/static/js/453.185a81d7.chunk.js",
     "index.html": "/casimedicos-dashboard/index.html",
-    "main.ea2d110a.css.map": "/casimedicos-dashboard/static/css/main.ea2d110a.css.map",
-    "main.e25cb9c2.js.map": "/casimedicos-dashboard/static/js/main.e25cb9c2.js.map",
+    "main.7459bfb1.css.map": "/casimedicos-dashboard/static/css/main.7459bfb1.css.map",
+    "main.475aedee.js.map": "/casimedicos-dashboard/static/js/main.475aedee.js.map",
     "453.185a81d7.chunk.js.map": "/casimedicos-dashboard/static/js/453.185a81d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea2d110a.css",
-    "static/js/main.e25cb9c2.js"
+    "static/css/main.7459bfb1.css",
+    "static/js/main.475aedee.js"
   ]
 }
