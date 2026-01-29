@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Evolution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MorphSVGPlugin.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg class="logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+            </svg>
+            <span>Transformer Evolution</span>
+        </div>
+        <div class="nav-timeline">
+            <div class="timeline-track">
+                <div class="timeline-progress"></div>
+            </div>
+            <div class="timeline-items" id="timeline-items">
+                <!-- Timeline items will be inserted by JS -->
+            </div>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
+
+    <main class="main-content">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2 id="arch-title">Original Transformer</h2>
+                <span class="arch-year" id="arch-year">2017</span>
+            </div>
+            <p class="arch-description" id="arch-description">
+                The original Transformer architecture from "Attention Is All You Need" by Vaswani et al.
+                It introduced self-attention as the primary mechanism for sequence modeling, replacing recurrence entirely.
+            </p>
+            <div class="arch-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Paper</span>
+                    <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="meta-value link">arXiv:1706.03762</a>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Key Innovation</span>
+                    <span class="meta-value" id="key-innovation">Self-Attention Mechanism</span>
+                </div>
+            </div>
+            <div class="changes-section" id="changes-section" style="display: none;">
+                <h3>What Changed</h3>
+                <div class="changes-list" id="changes-list"></div>
+            </div>
+        </aside>
+
+        <section class="architecture-view">
+            <div class="architecture-container" id="architecture-container">
+                <!-- Architecture SVG will be rendered here -->
+            </div>
+            <div class="zoom-controls">
+                <button class="zoom-btn" id="zoom-in" aria-label="Zoom in">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/>
+                    </svg>
+                </button>
+                <button class="zoom-btn" id="zoom-out" aria-label="Zoom out">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="M21 21l-4.35-4.35M8 11h6"/>
+                    </svg>
+                </button>
+                <button class="zoom-btn" id="zoom-reset" aria-label="Reset zoom">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                        <path d="M3 3v5h5"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <aside class="detail-panel" id="detail-panel">
+            <div class="panel-header">
+                <h3 id="component-title">Select a Component</h3>
+                <button class="close-panel" id="close-panel" aria-label="Close panel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="panel-content">
+                <div class="placeholder-message" id="placeholder-message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5"/>
+                    </svg>
+                    <p>Click on any component in the architecture diagram to see its explanation and implementation details.</p>
+                </div>
+                <div class="component-details" id="component-details" style="display: none;">
+                    <div class="detail-section">
+                        <h4>Overview</h4>
+                        <p id="component-overview"></p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>How It Works</h4>
+                        <p id="component-how"></p>
+                    </div>
+                    <div class="detail-section">
+                        <h4>Mathematical Formulation</h4>
+                        <div class="math-block" id="component-math"></div>
+                    </div>
+                    <div class="detail-section">
+                        <h4>PyTorch Implementation</h4>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span class="code-lang">Python</span>
+                                <button class="copy-btn" id="copy-code">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2"/>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    <span>Copy</span>
+                                </button>
+                            </div>
+                            <pre><code class="language-python" id="component-code"></code></pre>
+                        </div>
+                    </div>
+                    <div class="detail-section" id="tips-section">
+                        <h4>Implementation Tips</h4>
+                        <ul id="component-tips"></ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div class="transition-overlay" id="transition-overlay">
+        <div class="transition-content">
+            <div class="transition-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+            </div>
+            <h2 id="transition-title"></h2>
+            <p id="transition-description"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="architectures.js"></script>
+    <script src="components.js"></script>
+    <script src="animations.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
